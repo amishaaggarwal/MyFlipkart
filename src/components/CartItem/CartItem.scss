@@ -1,0 +1,134 @@
+.cartitem-parent {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+  background: #fff;
+  max-width: 950px;
+  border-top: 1px solid #f0f0f0!important;
+}
+.cartitem {
+  display: inline-flex;
+}
+.cartitem_img {
+  height: 112px;
+  width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 80%;
+  }
+}
+.cart-item-right
+{
+  padding: 10px ;
+}
+.plusminus {
+  display: inline-flex;
+  div {
+    padding: 3px 6px;
+    display: inline-flex;
+    justify-content: center;
+    width: calc(100% - 60px);
+    height: 100%;
+    width: 46px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    margin: 0 5px;
+  }
+}
+.min-plus-btn {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(#fff, #f9f9f9);
+  display: inline-block;
+  border: 1px solid #c2c2c2;
+  font-size: 16px;
+  border-radius: 50%;
+  padding-top: 1px;
+  line-height: 1;
+}
+.name-delivery {
+  display: inline-flex;
+  justify-content: space-between;
+  color: #212121;
+  width: 100%;
+  .item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    width: 74%;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .delivery-in {
+    font-size: 13px;
+    line-height: 1.4;
+    width: 25%;
+  }
+}
+button {
+  &:disabled {
+    color: grey;
+  }
+}
+.pack-of {
+  color: #878787;
+  font-size: 14px;
+  height: 20px;
+}
+.seller-assured {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  color: #878787;
+  font-size: 14px;
+  height: 20px;
+  .assured {
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 6px;
+  }
+}
+.disc-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  margin-right: 8px;
+  margin-top: 18px;
+}
+.price-actual {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #878787;
+  text-decoration: line-through;
+}
+.disc-offer {
+  font-weight: 500;
+  color: #388e3c;
+  font-size: 14px;
+  margin-right: 10px;
+  .offer{
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+      .info
+      {
+          background-color:#388e3c ;
+          border-radius: 50%;
+          width: 14px;
+          height: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          padding: 2px;
+          margin-left: 2px;
+      }
+  }
+}

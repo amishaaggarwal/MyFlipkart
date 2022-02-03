@@ -1,0 +1,28 @@
+.main-content {
+  margin: 3px;
+  width: 100%;
+  background-color: white;
+  padding: 12px 16px;
+}
+.breadcrumb {
+  a {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+}
+.page-heading {
+  font-weight: 500;
+  font-size: 16px;
+}
+.pagination-footer {
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px 0px;
+}

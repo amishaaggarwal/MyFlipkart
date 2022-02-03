@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+.slider-parent {
+  height: max-content;
+  width: 93vw;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.slider-heading {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  width: 100%;
+}
+.slider {
+  height: max-content;
+}
+.card-container {
+  width: 220px;
+  .card-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+.ratingReviewAssured {
+  width: 90%;
+}
+.react-multiple-carousel__arrow--right {
+  right: 0px;
+  border-radius: 4px 0 0 4px;
+}
+.react-multiple-carousel__arrow--left {
+  left: 0px;
+      border-radius: 0 4px 4px 0;
+}
+.react-multiple-carousel__arrow {
+  padding: 40px 15px;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0,  30%);
+  background-color: white;
+}
+.react-multiple-carousel__arrow::before {
+  color: #494949;
+  font-weight: bolder;
+}

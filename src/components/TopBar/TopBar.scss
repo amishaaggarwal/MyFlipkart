@@ -1,0 +1,48 @@
+$plus-yellow: #ffe500;
+$search-icon-blue: rgb(40, 116, 241);
+* {
+  box-sizing: border-box;
+}
+.logo-container {
+  height: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+}
+.logo {
+  width: 75px;
+}
+.topbar
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1248px;
+}
+.inline {
+  display: inline-flex;
+  align-items: center;
+}
+.explore-plus {
+  font-size: 11px;
+  font-style: italic;
+  margin-top: -1px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  span {
+    margin-left: 1px;
+    color: $plus-yellow;
+    font-weight: 500;
+    margin-right: 2px;
+  }
+}
+.search-icon {
+  fill: $search-icon-blue;
+}
+.btn {
+  text-transform: unset !important;
+}
+.dark-toast{
+  background: #323232;
+  color: #fff;
+}

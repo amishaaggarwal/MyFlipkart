@@ -1,0 +1,21 @@
+ .component {
+        width: 80%;
+        height: 65vh;
+        background: #fff;
+        margin: 80px 140px;
+    }
+    .image {
+        width: 15%;
+    }
+    .container {
+        text-align: center;
+        padding-top:70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span
+        {
+            margin-bottom: 5px;
+        }
+    }

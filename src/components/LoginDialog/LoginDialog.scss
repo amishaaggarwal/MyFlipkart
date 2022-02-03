@@ -1,0 +1,61 @@
+.dialog-component {
+  padding: 0 !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+.d-flex {
+  display: flex;
+}
+.dialog-image {
+  background-color: #2874f0;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 45px 35px;
+  img {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+.login {
+  padding: 25px 35px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.loginbtn {
+  text-transform: none;
+  color: #fff;
+  height: 48px;
+  border-radius: 2px;
+}
+.requestbtn {
+  text-transform: none;
+  background-color: #fff;
+  color: #2874f0;
+  height: 48px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 20%);
+}
+.small-text {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+}
+.createText {
+  width: 100%;
+  margin: auto 50px 5px 0;
+  text-align: center;
+  color: #2874f0;
+  font-weight: 600;
+  font-size: 14px;
+ 
+  cursor: pointer;
+}
+.error {
+  font-size: 10px;
+  color: #ff6161;
+  line-height: 0px;
+  margin-top: 10px;
+  font-weight: 600;
+}
