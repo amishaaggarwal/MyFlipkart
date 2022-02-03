@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Paper from "@mui/material/Paper";
 import { useNavigate } from "react-router-dom";
 import "./ProductCard.scss";
@@ -8,6 +8,8 @@ function ProductCard(props) {
   discounted_price *= 1 - props.details.discount / 100;
   discounted_price = Math.floor(discounted_price);
   const navigate = useNavigate();
+  const [elevate, setElevate] = useState(0);
+
   const handleClick = () => {
     navigate(`/product/${props.details.id}`, { state: props.details });
   };
@@ -17,6 +19,9 @@ function ProductCard(props) {
         maxWidth: "100%",
         padding: "10px",
       }}
+      elevation={elevate}
+      onMouseOver={() => setElevate(2)}
+      onMouseLeave={() => setElevate(0)}
       onClick={handleClick}
       className="card-container"
     >

@@ -55,7 +55,7 @@ function MainContent() {
       >
         {product_list.map((row) => (
           <Grid item xs={3} sm={3} md={3} key={row.name}>
-            <Item>
+            <Item elevation={0}>
               <ProductCard details={row} />
             </Item>
           </Grid>
