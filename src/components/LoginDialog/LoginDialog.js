@@ -80,6 +80,7 @@ function LoginDialog({ open, setOpen }) {
         signup.password
       );
       toggleAccount(accountInitialValues.login);
+      console.log(response);
     } catch (e) {
       console.log(e.message);
     }
