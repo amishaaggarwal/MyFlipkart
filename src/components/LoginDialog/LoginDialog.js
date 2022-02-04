@@ -158,7 +158,11 @@ function LoginDialog({ open, setOpen }) {
               <Button
                 className="loginbtn"
                 onClick={() => loginUser()}
-                sx={{ backgroundColor: "#fb641b", color: "white" }}
+                sx={{
+                  backgroundColor: "#fb641b",
+                  color: "white",
+                  "&:hover": { backgroundColor: "#fb641b", opacity: 0.9 },
+                }}
               >
                 Login
               </Button>
@@ -200,6 +204,17 @@ function LoginDialog({ open, setOpen }) {
                 sx={{ backgroundColor: "#fb641b", marginTop: "20px" }}
               >
                 Continue
+              </Button>
+              <Button
+                variant="contained"
+                onClick={() => toggleAccount(accountInitialValues.login)}
+                sx={{
+                  backgroundColor: "white",
+                  marginTop: "20px",
+                  color: "black",
+                }}
+              >
+                Existing User? Log in
               </Button>
             </Box>
           )}

@@ -85,7 +85,11 @@ function Cart() {
               </div>
               <div className="rt-bottom-rows">
                 <div>Delivery Charges</div>
-                <div>₹{cart_list.length * 40}</div>
+                {netAmount < 300 ? (
+                  <div>₹{cart_list.length * 40}</div>
+                ) : (
+                  <div className="rt-disc">FREE</div>
+                )}
               </div>
               <div className="ta">
                 <div>Total Amount</div>
