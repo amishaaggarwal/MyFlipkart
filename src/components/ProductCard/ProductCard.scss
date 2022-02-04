@@ -43,15 +43,15 @@
   font-size: 12px;
   vertical-align: middle;
   background-color: #388e3c;
+  margin-right: 3px;
 }
 .ratingReviewAssured {
-  width: 72%;
   margin-top: 5px;
   line-height: 1.4;
   display: inline-flex;
-  justify-content: space-between;
   .review {
     color: #878787;
+    margin-right: 3px;
   }
 }
 .priceBlock {
