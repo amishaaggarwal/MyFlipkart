@@ -285,7 +285,7 @@ function ViewProduct() {
       <div className="main-slider-container">
         <Slider details={list} heading={"Similar Products"} />
       </div>
-      {rv.length > 1 && <div className="main-slider-container">
+      {rv.length >= 1 && <div className="main-slider-container">
         <Slider details={rv} heading={"Recently Viewed"} />
       </div>}
     </div>

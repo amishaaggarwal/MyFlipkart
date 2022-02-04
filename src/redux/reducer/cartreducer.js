@@ -81,7 +81,6 @@ const cartreducer = (state = initialState, action) => {
       const existItem = state.recently_viewed.find(
         (product) => product.id === item.id
       );
-      console.log(state.recently_viewed);
       if (existItem) return { ...state };
       else {
         setLocalStorage("recently_viewed", item);
