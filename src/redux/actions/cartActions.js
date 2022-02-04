@@ -32,7 +32,7 @@ export function addToCart(fields) {
 
 export function plusMinusItem(fields) {
   toast.success(`You've changed '${fields.details.name}' QUANTITY to '${fields.quantity}'`, {
-    position: toast.POSITION.BOTTOM_CENTER,
+    position: toast.POSITION.BOTTOM_LEFT,
     className: "dark-toast",
   });
   return {
@@ -102,7 +102,7 @@ function getRecentlyViewedItemsFailure() {
 
 export function removeFromCart(id,name) {
   toast.success(`Successfully removed ${name} from your cart!`, {
-    position: toast.POSITION.BOTTOM_CENTER,
+    position: toast.POSITION.BOTTOM_LEFT,
     className: 'dark-toast'
   });
   let old_cart = JSON.parse(getLocalStorage("cart"));

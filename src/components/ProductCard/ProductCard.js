@@ -9,7 +9,6 @@ function ProductCard(props) {
   discounted_price = Math.floor(discounted_price);
   const navigate = useNavigate();
   const [elevate, setElevate] = useState(0);
-
   const handleClick = () => {
     navigate(`/product/${props.details.id}`, { state: props.details });
   };

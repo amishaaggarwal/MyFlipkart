@@ -8,7 +8,7 @@ function App() {
     <div>
       <TopBar/>
       <Routing />
-      <ToastContainer />
+      <ToastContainer limit={2}/>
     </div>
   );
 }
