@@ -50,7 +50,7 @@ function MainContent() {
       <span className="page-heading">Mobile Camera Lens Protectors</span>
       <Grid
         container
-        columns={{ xs: 12, sm: 12, md: 12 }}
+        columns={{ xs: 6, sm: 9, md: 12 }}
         sx={{ marginTop: "8px" }}
       >
         {product_list.map((row) => (
