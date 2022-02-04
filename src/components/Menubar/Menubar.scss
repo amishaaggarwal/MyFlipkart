@@ -1,7 +1,17 @@
-.menubar
-{
-    display: inline-flex;
-    justify-content: space-evenly;
-    margin-top:0px;
-    padding-top: 0px;
+* {
+  box-sizing: border-box;
+}
+.menubar-parent {
+  max-height: 40px;
+  line-height: 1.4;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.menubar {
+  font-size: 12px;
+  height: 100%;
+  .menuBtn {
+    height: min-content;
+    white-space: nowrap;
+  }
 }

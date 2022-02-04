@@ -6,162 +6,47 @@ import AppBar from "@mui/material/AppBar";
 import "./Menubar.scss";
 
 function Menubar() {
+  const menu = [
+    "Electronics",
+    "TV's & Appliances",
+    "Men",
+    "Women",
+    "Baby & Kids",
+    "Home & Furniture",
+    "Sports,Books & More",
+    "Flights",
+    "Offer Zone",
+    "Grocery",
+  ];
   return (
-    <AppBar position="static" sx={{ padding: "0px 124px",backgroundColor:"white" }}>
-      <Toolbar
-        className="menubar"
-      >
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-              padding: "0px",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Electronics
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          TVs &amp; Aplliances
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Men
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Women
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Baby &amp; Kids
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Home &amp; Furniture
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Sports,Books, &amp; More
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Flights
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Offer Zone
-        </Button>
-        <Button
-          className="btn"
-          variant="outlined"
-          size="small"
-          sx={{
-            "&.MuiButton-outlined": {
-              color: "black",
-              fontWeight: 500,
-              border: "none",
-            },
-          }}
-          endIcon={<KeyboardArrowDownIcon sx={{ height: "12px" }} />}
-        >
-          Grocery
-        </Button>
+    <AppBar
+      position="static"
+      sx={{ padding: "0px 124px", backgroundColor: "white" }}
+      className="menubar-parent"
+    >
+      <Toolbar className="menubar" sx={{ padding: "0" }}>
+        {menu &&
+          menu.map((row, i) => (
+            <Button
+              className="btn menuBtn"
+              variant="outlined"
+              size="small"
+              key={i}
+              sx={{
+                "&.MuiButton-outlined": {
+                  color: "black",
+                  fontWeight: "500",
+                  border: "none",
+                  padding: "0",
+                },
+              }}
+            >
+              {row}
+              <KeyboardArrowDownIcon
+                sx={{ height: "10px", paddingLeft: "0", marginLeft: "0" }}
+              />
+            </Button>
+          ))}
       </Toolbar>
     </AppBar>
   );
